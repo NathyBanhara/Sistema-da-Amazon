@@ -27,7 +27,7 @@ def checar_senha(senha):
     """
     try:
         senha_numeros = int(senha)
-        if len(senha) < 6:
+        if len(senha) != 6:
             return False
         return senha
     except ValueError: 
