@@ -8,4 +8,3 @@ def checa_nome(nome):
             return False
     return True
 
-print(checa_nome("Natá8lia"))
