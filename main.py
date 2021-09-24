@@ -229,10 +229,7 @@ def pagamento(main, usuario_atual):
                 print("Valor inválido. O valor é menor que R$ 1.00 ou ultrapassa o limite de R$ 1000.00.")
     main[usuario_atual].limite += valor_pagar
     main[usuario_atual].compras = []
-    if main[usuario_atual].total_de_gastos - valor_pagar < 0:
-        main[usuario_atual].total_de_gastos = 0.00
-    else:
-        main[usuario_atual].total_de_gastos -= valor_pagar
+    main[usuario_atual].total_de_gastos -= valor_pagar
     print(f"O valor foi inserido com sucesso. Seu crédito atual é de R$ {(main[usuario_atual].limite):.2f}.")
 
 main = []    #Lista na qual todas informações dos clientes ficam
