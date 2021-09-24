@@ -11,15 +11,3 @@ def entre_com_int(mensagem_inicio, primeiro_valor, segundo_valor, mensagem_erro)
         else:
             print(mensagem_erro)
 
-#Funciona como a função acima, mas recebe um valor em float
-def entre_com_float(mensagem_inicio, primeiro_valor, segundo_valor, mensagem_erro):
-    while True:
-        try:
-            variavel = float(input(mensagem_inicio))
-            if variavel >= primeiro_valor and variavel <= segundo_valor:
-                return variavel
-        except ValueError:
-            print(mensagem_erro)
-        else:
-            print(mensagem_erro)
-
